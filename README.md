@@ -54,7 +54,7 @@ _How?_
 
 Our claim search is primarily done using google's fact checker [API](https://developers.google.com/fact-check/tools/api). 
 
- -------Description of the API Goes Here--------
+![OurAPI](Assets/GoogleAPI.png)
 
 The biggest challenge using this API was figuring out where to call it and  getting it to display on English results (as our site is only in English). In order to resolve our language issue we inserted a bit of code into the original API code that set the language to en
 
@@ -64,6 +64,10 @@ The biggest challenge using this API was figuring out where to call it and  gett
 _What?_
 
 
+![claims](Assets/cardview.png)
+
+We created a box that holds small cards that display all the information given to us by the API. The cards have a scroll bar in order to better serve the user and the box they are contained scrolls as well.
+
 
 _Why?_
 
@@ -72,6 +76,9 @@ One of the most important points we all agreed on early in the build of this pro
 _How?_
 
 ![Search-Results](Assets/CodeSnippet01)
+![SemanticUI](Assets/In-Black-34px-R.png)
+
+We used semantic UI to build the boxes and give them color. 
 
 ### __3. A User profile__
 
@@ -97,9 +104,10 @@ In the end we chose to do secret option number 3, using the first page to displa
 
 When a user types in the search box, a query is run for the term that is being searched in user.js where results are then posted in the form of "data" and run through a jquery call-using a for loop and some html to make it sit correctly on the page. 
  
- ![seachfunctionality]()
+ ![seachfunction](Assets/CodeSnippet-jssearchresults.jpg)
 
 ### __4. A saved search__
+
 _What?_
 
 An option for having a user to save the search title they just made for later reading. The article details are saved to a profile page that the user can access later. 
@@ -110,6 +118,7 @@ This too, fit into our goal of making an easy to use fact-checker website. Being
 
 _How?_
 
+For our saved searches, how it works is that when a user would like to look up any facts and find out if any articles, statements are true or false, the user can save them with the “Save Fact” button and look over their saved searches later on which goes into the “Profile” page and logs all their saved searches. We did want to incorporate a delete button for each saved fact in case they wouldn’t like it in their saved searches page anymore. It’s a great way for those who want to read up on the article more and save these articles in a way they could do more in depth research.
 
 
 
@@ -125,22 +134,12 @@ _How?_
  4. A Logo to go with the page 
 
 
- __What we have to say about this project__
-
-
- _Janessa_
-
-  
-_Rachael_  
-
-
 
 ## Usage
 ### This site is for anyone. Anyone who finds themselves lost in the world of information that the modern world grants us and would like a little more clarity, insight and direction in that world. 
     
 
 ## Authors 
-
 
 
 Janessa Fong
