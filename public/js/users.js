@@ -2,13 +2,18 @@
 
 
 $(document).ready(function() {
+    $(".searchCardsContainer").css("display", "none");
     // welcomes members
     $.get("/api/user_data").then(function(data) {
-        $(".member-name").text(JSON.stringify(data.username));
+        let username = JSON.stringify(data.username);
+        username = username.replace(/"/g, "")
+        $(".member-name").text(` ${username}!`);
     });
+
     // When user hits enter
     $(document).on('click', "#searchterm", function(event) {
         $(".three").empty();
+        $(".searchCardsContainer").css("display", "block");
         // if (event.which == 13) {
         var userInput = $("#search-input").val();
         console.log(userInput);
@@ -30,19 +35,19 @@ $(document).ready(function() {
                     // displays the facts in cards
                     var fact =
                         `    
-                            <div class="card">
+                            <div class="card inverted searchCard">
                         <div class="ui inverted segment">
-                                <P id="title-${i}">${title}</P>
+                                <p id="title-${i}">${title}</p>
                                 <div class="ui inverted divider"></div>
                                 <p id="body-${i}">${body}</p>
-                                <i id="rating-${i}">${rating}</i>
+                                <i id="rating-${i}">Rating: ${rating}</i>
                                 <h4><a href=${url} data-url${i}="${url}"><p>Read Article Here</p></a><h4>
-                                <button type='submit' class='btn btn-default' id="saveBtn" data-id="${i}">SAVE</button>
+                                <button type="submit" id ="saveBtn" class="ui inverted teal basic button" data-id="${i}">SAVE FACT</button>
                             </div>   
                             </div>    
                         `
                         // appends to the html
-                    $(".three").append(fact);
+                    $(".userSearches").append(fact);
                 };
             };
         });
@@ -55,13 +60,6 @@ $(document).ready(function() {
         var savedBody = $("#body-" + $(this).data("id"));
         var savedRating = $("#rating-" + $(this).data("id"));
         var savedURL = $("#title-" + $(this).data("id"));
-        // var savingURL = $($(this).data("url" + $(this).data("id")));
-        // var urlll = $(this).data("url-");
-        // var concatURL = urlll + $(this).data("id");
-
-        // console.log(savedTitle);
-        // console.log(savedTitle[0].innerHTML);
-        // console.log(savedTitle[0].parentElement.children[4].outerHTML);
 
         var savedResults = {
 
@@ -76,7 +74,6 @@ $(document).ready(function() {
         $.get("/api/user_data").then(function(data) {
             var id = data.id
             $.post("/api/user/" + id + "/search", savedResults);
-
         });
     });
 

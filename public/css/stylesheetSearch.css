@@ -1,10 +1,98 @@
-nav {
-    min-height: 60px;
+.cardsContainer {
+    max-width: 100vw !important;
+    height: 600px;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 5vh !important;
+    outline: solid;
+    outline-color: grey;
+    padding: 40px;
+    /* border-radius: 20px; */
+}
+
+@media (max-width:700px) {
+    div.cardsContainer {
+        display: none;
+        outline: none;
+    }
+    div.searchCardsContainer {
+        display: hidden;
+        outline: none;
+    }
+}
+
+#search-input {
+    max-width: 50vw;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.member-name {
+    color: #09c6f9;
+}
+
+.factCard {
+    height: 230px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: auto;
+}
+
+.results,
+h2 {
+    text-align: center;
 }
 
 body {
     background-color: #121213 !important;
 }
+
+.searchCardsContainer {
+    max-width: 100vw !important;
+    height: 375px;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 2vh !important;
+    outline: solid;
+    outline-color: grey;
+    padding: 40px;
+    /* border-radius: 20px; */
+}
+
+.searchCard {
+    height: 230px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: auto;
+}
+
+#mainHead {
+    /* margin: 3%; */
+    font-size: 60px;
+    color: white;
+}
+
+button.teal {
+    text-align: center;
+}
+
+
+/* p {
+    color: blue;
+} */
+
+
+/* NAV */
+
+
+/* .hidden.menu {
+    display: none;
+}
+.ui.secondary.inverted.pointing.menu {
+    border: none;
+} */
 
 
 /* LANDING */
@@ -24,8 +112,7 @@ body {
 }
 
 #mainHead {
-    margin: 3%;
-    font-size: 60px;
+    font-size: 100px;
     color: white;
 }
 
@@ -66,28 +153,6 @@ body {
 #searchContainer {
     width: 100vw !important;
     margin-top: 30vh !important;
-}
-
-.cardsContainer {
-    max-width: 100vw !important;
-    height: 600px;
-    overflow: auto;
-    margin: 0 auto;
-    margin-top: 10vh !important;
-    outline: solid;
-    outline-color: grey;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* border-radius: 20px; */
-}
-
-@media (max-width:700px) {
-    div.cardsContainer {
-        display: none;
-        outline: none;
-    }
 }
 
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
@@ -265,6 +330,57 @@ body {
         display: inline-flex !important;
     }
 }
+
+
+/* CARDSSSS */
+
+
+/* .cardContainer {
+    position: relative;
+    height: 300px;
+    top: 60px;
+    flex-direction: row;
+    /* overflow-x: hidden; */
+
+
+/* left: calc(50% - 300px);
+    display: flex;
+} */
+
+
+/* .cardContainer .card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background: linear-gradient(#045DE9, #09C6F9);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    cursor: pointer;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+}  */
+
+
+/* .card:not(:first-child) {
+    margin-left: -50px;
+} */
+
+
+/* .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+} */
+
+
+/* .card:hover~.card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+} */
 
 .cardContainer .card.active {
     z-index: 3;
