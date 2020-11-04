@@ -17,18 +17,20 @@
 
 ## Description
 We wanted a cleaner, easy to use website. Part of making it easy to use was making it mobile responsive.
+
 ![Responsive](https://media.giphy.com/media/5gjvyrt0lB102eXwUu/giphy.gif)
 
 ## Technologies_Used
-* JavaScript 
-* HTML
-* CSS
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [express.js](https://expressjs.com/)
 * [express-sessions](https://www.npmjs.com/package/express-session)
 * [node.js](https://www.npmjs.com/)
 * [mysql](https://www.mysqltutorial.org/)
 * [jQuery](https://jquery.com/)
 * [passport.js](http://www.passportjs.org/)
+* [passport-local](http://www.passportjs.org/packages/passport-local/)
 * [sequelize](https://github.com/sequelize/sequelize/)
 * [bcrypt.js](https://www.npmjs.com/package/bcryptjs) 
 * [Semantic UI](https://semantic-ui.com/)
@@ -76,7 +78,7 @@ One of the most important points we all agreed on early in the build of this pro
 _How?_
 
 ![Search-Results](Assets/CodeSnippet01.png)
-![SemanticUI](Assets/In-Black-34px-R.png)
+![SemanticUI](Assets/SemanticUI.png)
 
 We used semantic UI to build the boxes and give them color. 
 
@@ -128,10 +130,14 @@ For our saved searches, how it works is that when a user would like to look up a
  __For later builds__
 
 
- 1. twitter fact check -reads through tweets and uses response to enter into the fact check api
- 2. Comments section
- 3. Icons/images that show up with claims
+ 1. Twitter fact check -reads through tweets and uses response to enter into the fact check api
+ 2. Comments section for discussion between users
+ 3. Icons/images that show up with claims because users love visuals
  4. A Logo to go with the page 
+ 5. Add a featured section of recent facts or most saved 
+ 6. Have users interact and be able to see each other's profiles of their saved searches for more open discussions
+ 7. Add a delete feature in the saved searches 
+ 8. Add more to user's profile such as a profile photo, name, bio and being able to edit or update them
 
 
 
@@ -142,31 +148,31 @@ For our saved searches, how it works is that when a user would like to look up a
 ## Authors 
 
 
-Janessa Fong
+Janessa Reeanne Fong
 
-* [linkedin] (hhttps://www.linkedin.com/in/janessafong) 
+* [linkedin](hhttps://www.linkedin.com/in/janessafong) 
 
-* [github] (https://github.com/janessaref)
+* [github](https://github.com/janessaref)
 
-* [portfolio](https://rksouth.github.io/responsive_portfolio/)
+* [portfolio](https://janessaref.github.io/my-portfolio/)
 
 Rachael Kelm-Southworth
 
-* [linkedin] (https://www.linkedin.com/in/rachael-kelm-southworth-87a3831b3) 
+* [linkedin](https://www.linkedin.com/in/rachael-kelm-southworth-87a3831b3) 
 
-* [github] (https://github.com/RKSouth/)
+* [github](https://github.com/RKSouth/)
 
 * [portfolio](https://rksouth.github.io/responsive_portfolio/)
 
 Aaron Diggdon
 
-* [github] (https://github.com/aarondig)
+* [github](https://github.com/aarondig)
 
 
 
  ## Credits
 
-I would like to thank Kerwin, Manuel, Jerome, Roger and all my classmates for helping me understand this subject matter and anyone that contributed to make the base code.
+We would like to thank Kerwin, Manuel, Jerome, Roger and all my classmates for helping me understand this subject matter and anyone that contributed to make the base code.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
