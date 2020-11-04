@@ -75,7 +75,7 @@ One of the most important points we all agreed on early in the build of this pro
 
 _How?_
 
-![Search-Results](Assets/CodeSnippet01)
+![Search-Results](Assets/CodeSnippet01.png)
 ![SemanticUI](Assets/In-Black-34px-R.png)
 
 We used semantic UI to build the boxes and give them color. 
@@ -104,7 +104,7 @@ In the end we chose to do secret option number 3, using the first page to displa
 
 When a user types in the search box, a query is run for the term that is being searched in user.js where results are then posted in the form of "data" and run through a jquery call-using a for loop and some html to make it sit correctly on the page. 
  
- ![seachfunction](Assets/CodeSnippet-jssearchresults.jpg)
+ ![seachfunction](Assets/CodeSnippet-jssearchresults.png)
 
 ### __4. A saved search__
 
@@ -160,19 +160,13 @@ Rachael Kelm-Southworth
 
 Aaron Diggdon
 
-* [linkedin] (https://www.linkedin.com/in/rachael-kelm-southworth-87a3831b3) 
-
 * [github] (https://github.com/aarondig)
 
-* [portfolio](https://rksouth.github.io/responsive_portfolio/)
+
 
  ## Credits
 
-I would like to thank Kerwin, Manuel, Roger, Jerome and all my classmates for helping me understand this subject matter and anyone that contributed to make the base code.
+I would like to thank Kerwin, Manuel, Jerome, Roger and all my classmates for helping me understand this subject matter and anyone that contributed to make the base code.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
-
-
